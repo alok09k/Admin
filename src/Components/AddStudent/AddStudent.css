@@ -1,0 +1,87 @@
+.specific-page
+{
+    width: 35vw;
+    margin-left: 20px;
+}
+.specific-page h1 {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.specific-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.specific-page p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.specific-page .image {
+    display: block;
+    margin: 0 auto;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.specific-page .image:hover {
+    border-color: #999;
+}
+
+.specific-page input[type="text"], .specific-page input[type="file"] {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #202020;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.specific-page input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.specific-page button {
+    width: 106%;
+    background-color: #007bff; /* Use "background-color" for clarity */
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 2rem; /* Adjusted padding for better consistency */
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block; /* Ensure the button behaves properly in layouts */
+    transition: background-color 0.3s ease; /* Add hover effect for a better UX */
+}
+
+
+.specific-page button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+/* Add responsive behavior for specific page */
+@media (max-width: 500px) {
+    .specific-page .App {
+        padding: 1.5rem;
+    }
+
+    .specific-page h1 {
+        font-size: 1.2rem;
+    }
+
+    .specific-page button {
+        font-size: 0.9rem;
+    }
+}

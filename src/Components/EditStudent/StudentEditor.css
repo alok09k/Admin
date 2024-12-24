@@ -1,0 +1,123 @@
+/* Base Styles */
+  
+  .student-editor {
+    width: 35vw;
+    margin-left: 20px;
+    margin-top: -23px;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .student-editor h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #000000;
+  }
+  
+  /* Search Section */
+  .student-editor input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .student-editor input[type="text"]:focus {
+    border-color: #007bff;
+  }
+  
+  .student-editor button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .student-editor button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .student-editor button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  
+  /* Student Details Section */
+  .student-details {
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .student-details p {
+    margin: 10px 0;
+    color: #555555;
+  }
+  
+  .student-details img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px;
+  }
+  
+  .student-details div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .student-details input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .student-details input[type="text"]:focus {
+    border-color: #007bff;
+  }
+  
+  .student-details button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .student-details button:hover {
+    background-color: #218838;
+  }
+  
+  .student-details button:nth-child(2) {
+    background-color: #dc3545;
+  }
+  
+  .student-details button:nth-child(2):hover {
+    background-color: #c82333;
+  }
+  
+  .student-details button.cancel {
+    background-color: #6c757d;
+  }
+  
+  .student-details button.cancel:hover {
+    background-color: #5a6268;
+  }
+  
